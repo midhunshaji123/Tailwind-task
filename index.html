@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VINTAGE CAR'S</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Lobster&family=Protest+Guerrilla&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+<!-- font awesome  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body >
+   <div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-4">
+            <a class="navbar-brand text-pink-600 font-bold text-xl" href="#">Vintage Cars</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link text-gray-800" href="#home">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link text-gray-800" href="#about">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link text-gray-800" href="#Car Collections">CAR COLLECTION'S</a></li>
+                    <li class="nav-item"><a class="nav-link text-gray-800" href="#Service">SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link text-gray-800" href="#Gallery">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link text-gray-800" href="#contact">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+        <!-- Hero Section -->
+        <!-- Hero Section with Carousel -->
+        <section id="home" class="hero-section relative w-full h-screen overflow-hidden">
+            <div class="carousel-images absolute inset-0 w-full h-full">
+                <div class="carousel-image bg-cover bg-center h-full w-full opacity-0 animate-fade-in-1"
+                    style="background-image: url('./media/courosal\ 1.jpg');"></div>
+                <div class="carousel-image bg-cover bg-center h-full w-full opacity-0 animate-fade-in-2"
+                    style="background-image: url('./media/courosal\ 2.avif');"></div>
+                <div class="carousel-image bg-cover bg-center h-full w-full opacity-0 animate-fade-in-3"
+                    style="background-image: url('./media/courosal\ 3.jpeg');"></div>
+            </div>
+            <div class="container relative z-10 text-center flex flex-col items-center justify-center h-full">
+                <h1 class="text-4xl md:text-5xl font-bold text-white">Welcome to vintage car collection's</h1>
+                <p class="text-xl md:text-2xl text-gray-200 mt-4">Experience the antique model's</p>
+            </div>
+        </section>
+    
+        <!-- Menu Section -->
+
+
+        <section id="about" class="section w-full h-auto sm:h-[80vh] bg-gray-100 flex flex-col items-center py-10 sm:py-20">
+            <!-- Main Heading Above the Divs, Centered Horizontally -->
+            <h1 class="text-3xl sm:text-4xl font-bold text-center mb-4">ABOUT US</h1>
+        
+            <div class="main flex w-full h-full">
+                <!-- Left Content Div -->
+                <div class="w-full h-auto sm:h-full p-4 flex items-center justify-center">
+                    <!-- Content Section -->
+                    <p class="text-xs sm:text-sm md:text-base lg:text-lg text-black tracking-wide leading-8 md:leading-10 text-center sm:text-justify">
+                        This is your content. You can add as much text as you need to fully utilize the space in this div.
+                        The content here will expand to fill the entire height and width of the left div. Adjust the text
+                        as needed to fit your design needs. With full justification, the text will align evenly on both
+                        sides, creating a cleaner and more structured look. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quae aperiam ipsam nemo, explicabo incidunt quisquam dolorem non vitae ducimus
+                        iure harum est voluptatibus eum nihil dolor tenetur quam ipsa ad?
+                        Molestiae doloremque culpa nihil possimus officiis excepturi itaque fugit quam numquam officia? Id
+                        unde libero ipsum dolorum, est reiciendis iure repellendus atque quidem quibusdam fugit ab sapiente,
+                        exercitationem mollitia necessitatibus! <br><br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, sed placeat ab libero cumque
+                        exercitationem tenetur. Officia, quam facere? Consequuntur asperiores deserunt repudiandae quos in
+                        blanditiis omnis optio aliquid earum.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <br><br><br>
+        
+        <div id="Car Collections" class="w-full flex flex-col items-center my-8">
+            <!-- Main Heading Centered Above the Grid -->
+            <h1 class="text-3xl sm:text-4xl font-bold mb-4 text-center">CAR COLLECTIONS</h1>
+        
+            <!-- Image Grid Section -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 w-full max-w-screen-lg justify-items-center">
+                <div data-aos="fade-right" class="w-[280px] sm:w-[400px] h-[200px] sm:h-[300px] bg-white border rounded-lg shadow overflow-hidden">
+                    <img src="./media/red car.avif" alt="Red Car" class="w-full h-full object-cover">
+                </div>
+                <div data-aos="fade-down" class="w-[280px] sm:w-[400px] h-[200px] sm:h-[300px] bg-white border rounded-lg shadow overflow-hidden">
+                    <img src="./media/car colllection2.jpg" alt="Car Collection 2" class="w-full h-full object-cover">
+                </div>
+                <div data-aos="fade-left" class="w-[280px] sm:w-[400px] h-[200px] sm:h-[300px] bg-white border rounded-lg shadow overflow-hidden">
+                    <img src="./media/car coll 3.avif" alt="Car Collection 3" class="w-full h-full object-cover">
+                </div>
+                <div data-aos="fade-right" class="w-[280px] sm:w-[400px] h-[200px] sm:h-[300px] bg-white border rounded-lg shadow overflow-hidden">
+                    <img src="./media/bmw.avif" alt="Red Car" class="w-full h-full object-cover">
+                </div>
+                <div data-aos="fade-up" class="w-[280px] sm:w-[400px] h-[200px] sm:h-[300px] bg-white border rounded-lg shadow overflow-hidden">
+                    <img src="./media/green padmini.jpeg" alt="Car Collection 2" class="w-full h-full object-cover">
+                </div>
+                <div data-aos="fade-left" class="w-[280px] sm:w-[400px] h-[200px] sm:h-[300px] bg-white border rounded-lg shadow overflow-hidden">
+                    <img src="./media/antique car.jpeg" alt="Car Collection 3" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        
+        
+    
+        <br><br><br><br>
+
+
+        <div id="Service" class="attraction w-full flex flex-col items-center my-8">
+            <!-- Main Heading Centered Above the Grid -->
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-center">SERVICES</h1>
+        
+            <!-- Image Grid Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full max-w-screen-lg justify-items-center">
+                <div class="w-[90%] sm:w-[80%] md:w-[400px] h-[250px] sm:h-[300px] lg:h-[400px] bg-white border rounded-lg shadow overflow-hidden flex flex-col items-center">
+                    <img src="./media/repair.jpg" alt="Repair" class="w-full h-full object-cover">
+                    <h2 class="text-md sm:text-lg lg:text-xl font-bold text-center mt-2">Repair's</h2>
+                </div>
+                <div class="w-[90%] sm:w-[80%] md:w-[400px] h-[250px] sm:h-[300px] lg:h-[400px] bg-white border rounded-lg shadow overflow-hidden flex flex-col items-center">
+                    <img src="./media/3.jpg" alt="Upholstery" class="w-full h-full object-cover">
+                    <h2 class="text-md sm:text-lg lg:text-xl font-bold text-center mt-2">Upholstery</h2>
+                </div>
+                <div class="w-[90%] sm:w-[80%] md:w-[400px] h-[250px] sm:h-[300px] lg:h-[400px] bg-white border rounded-lg shadow overflow-hidden flex flex-col items-center">
+                    <img src="./media/CarPaint-20-w.webp" alt="Paint Work" class="w-full h-full object-cover">
+                    <h2 class="text-md sm:text-lg lg:text-xl font-bold text-center mt-2">Paint Work</h2>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Gallery Section -->
+        <div id="Gallery" class="stock section w-full h-auto bg-gray-100 flex flex-col items-center py-8 sm:py-12">
+            <!-- Main Heading Centered Above the Grid -->
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 text-center">GALLERY</h1>
+        
+            <!-- Child Divs in a Row (Grid) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 w-full max-w-screen-lg justify-items-center">
+                <div class="w-[90%] sm:w-[80%] lg:w-[400px] h-[200px] sm:h-[250px] lg:h-[300px] bg-white border rounded-lg shadow overflow-hidden flex flex-col items-center">
+                    <img src="./media/currnt stock 1.avif" alt="Datsun Fairlady Z" class="w-full h-full object-cover">
+                    <h2 class="text-sm sm:text-md lg:text-lg font-bold text-center mt-2">Datsun Fairlady Z</h2>
+                </div>
+                <div class="w-[90%] sm:w-[80%] lg:w-[400px] h-[200px] sm:h-[250px] lg:h-[300px] bg-white border rounded-lg shadow overflow-hidden flex flex-col items-center">
+                    <img src="./media/crnt sock 4.jpg" alt="Classic Opel Admiral" class="w-full h-full object-cover">
+                    <h2 class="text-sm sm:text-md lg:text-lg font-bold text-center mt-2">Classic Opel Admiral</h2>
+                </div>
+                <div class="w-[90%] sm:w-[80%] lg:w-[400px] h-[200px] sm:h-[250px] lg:h-[300px] bg-white border rounded-lg shadow overflow-hidden flex flex-col items-center">
+                    <img src="./media/curnt stock 3.jpg" alt="Opel Captain" class="w-full h-full object-cover">
+                    <h2 class="text-sm sm:text-md lg:text-lg font-bold text-center mt-2">Opel Captain</h2>
+                </div>
+                <div class="w-[90%] sm:w-[80%] lg:w-[400px] h-[200px] sm:h-[250px] lg:h-[300px] bg-white border rounded-lg shadow overflow-hidden flex flex-col items-center">
+                    <img src="./media/stockkkkkk8.jpg" alt="Ford Thunderbird 1957" class="w-full h-full object-cover">
+                    <h2 class="text-sm sm:text-md lg:text-lg font-bold text-center mt-2">Ford Thunderbird 1957</h2>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Section -->
+        <div class="bg-gray-100">
+            <div class="max-w-screen-lg mx-auto py-6 sm:py-10 px-4 sm:px-6 text-gray-700 space-y-6 sm:space-y-10 md:space-y-0 md:flex md:flex-wrap md:justify-between">
+                <!-- Menu Section -->
+                <div class="p-5 w-full md:w-1/2 lg:w-1/4 border-b md:border-b-0 md:border-r border-gray-300">
+                    <div class="text-sm uppercase text-indigo-600 font-bold mb-4">Menu</div>
+                    <ul>
+                        <li class="my-2">
+                            <a class="hover:text-indigo-600" href="#">Home</a>
+                        </li>
+                        <li class="my-2">
+                            <a class="hover:text-indigo-600" href="#">About us</a>
+                        </li>
+                        <li class="my-2">
+                            <a class="hover:text-indigo-600" href="#">Services</a>
+                        </li>
+                        <li class="my-2">
+                            <a class="hover:text-indigo-600" href="#">Collections</a>
+                        </li>
+                    </ul>
+                </div>
+        
+                <!-- Center Section -->
+                <div class="p-5 w-full md:w-1/2 lg:w-2/4 text-center border-b md:border-b-0 border-gray-300">
+                    <h3 class="font-bold text-lg sm:text-xl lg:text-2xl text-indigo-600 mb-4">Componentity</h3>
+                    <p class="text-gray-500 text-sm sm:text-base lg:text-lg">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+        
+                <!-- Contact Section -->
+                <div id="contact" class="p-5 w-full lg:w-1/4 border-t md:border-t-0 md:border-l border-gray-300">
+                    <div class="text-sm uppercase text-indigo-600 font-bold mb-4">Contact Us</div>
+                    <address class="not-italic">
+                        <ul>
+                            <li class="my-2">
+                                <a class="hover:text-indigo-600" href="tel:8289835176">8289835176, Mexico</a>
+                            </li>
+                            <li class="my-2">
+                                <a class="hover:text-indigo-600" href="mailto:contact@company.com">contact@company.com</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Social Icons and Copyright -->
+        <div class="flex flex-col items-center border-t max-w-screen-xl mx-auto py-4 sm:py-5 text-gray-700 text-xs sm:text-sm space-y-4">
+            <div class="flex justify-center space-x-3">
+                <!-- Social Media Icons (Add SVGs for each social icon) -->
+                <a href="#" class="w-5 sm:w-6">
+                    <!-- Twitter Icon SVG -->
+                </a>
+                <a href="#" class="w-5 sm:w-6">
+                    <!-- Facebook Icon SVG -->
+                </a>
+            </div>
+            <div class="text-center">© Copyright 2023. All Rights Reserved.</div>
+        </div>
+        
+        
+        
+
+    
+    
+   </div>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+
+
+
+</html>
